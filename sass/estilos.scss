@@ -1,0 +1,57 @@
+// Definiendo las Variables
+
+$colorFondo: #fff346;
+$colorPrimario: #ffffff;
+$colorSecundario: #38b;
+$colorTerciario: #000d56;
+
+// Estilos Generales
+*{
+    margin: 0%;
+    padding: 0%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    background: $colorSecundario;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+// Estilos Especificos
+
+.contenedor {
+    background: $colorPrimario;
+    max-width: 350px;
+    padding: 20px 15px;
+    margin: 20px auto;
+    form {
+        p {
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 20px;
+        }
+        input[type="text"] {
+            padding: 10px;
+            width: 100%;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .btn {
+            width: 100%;
+            background: $colorTerciario;
+            color: $colorPrimario;
+            display: inline-block;
+            padding: 20px;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            text-align: center;
+            &:hover {
+                background: $colorSecundario;
+            }
+        }
+    }
+    
+}
